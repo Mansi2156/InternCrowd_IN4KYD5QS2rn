@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./landing.css">
+</head>
+<body>
+    <div class="heading">
+        <img src="./linkedin.png">
+        <h2>Talent Solutions</h2>
+    </div>
+    <hr>
+    <!-- positioned one element as fixed -->
+    <div class="section1">
+        <div class="container1">
+            <h1>Post a job with<br>LinkedIn Jobs</h1>
+            <h2>Find and hire qualified talent more efficiently.</h2>
+            <button onclick="window.location.href = 'https://www.linkedin.com/talent/post-a-job?isPostForFreeCampaign=true&src=direct%2Fnone&veh=direct%2Fnone%7Cdirect%2Fnone';">Post a free job</button>
+        </div>
+    </div>
+    <button class="fixed-button">Start your job post</button>
+    <div class="section2">
+        <h2>Why post a job on LinkedIn?</h2><br><br><br>
+        <div class="container3">
+            <div class="column">
+                <h1>52M</h1>
+                <p>job seekers visit LinkedIn Jobs every week<br>(September 2022).</p>
+            </div>
+            <div class="column">
+                <h1>#1</h1>
+                <p>rated in increasing the quality of hire<br>(LinkedIn data, global).</p>
+            </div>
+            <div class="column">
+                <h1>8</h1>
+                <p>people are hired every minute on LinkedIn<br>(October 2022).</p>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <h1>Get 3x more qualified applicants when you<br> pay to promote your job</h1>
+        <h2>LinkedIn Jobs is smart hiring that puts you in control. Here's how:</h2><br><br><br><br>
+        <div class="container4">
+            <div class="column">
+                <p><b>You set the budget</b></p><br>
+                <p>Post your job for free, or set a budget to promote your posting and get 3x more qualified 
+                    applicants. We can even help recommend a budget based on your hiring needs.</p>
+            </div>
+            <div class="column">
+                <p><b>You control the spend</b></p><br>
+                <p>Set a daily budget or a total budget, edit your spend, or close your job at any time.</p>
+            </div>
+            <div class="column">
+                <p><b>You only pay for engagement</b></p><br>
+                <p>With our flexible pricing model, you ponly pay when someone enagages with your job posting. 
+                    No marked-up flat rates in sight.</p>
+            </div>
+        </div>
+        <br>
+        <h2>Post a job for free,then deccide if you'd like to pay to promote it</h2>
+        <center><button onclick="window.location.href = 'https://www.linkedin.com/talent/post-a-job?isPostForFreeCampaign=true&src=direct%2Fnone&veh=direct%2Fnone%7Cdirect%2Fnone';">Get Started</button></center>
+    </div>
+    <div class="section4">
+        <h2>How is works:</h2><br><br>
+        <div class="container5">
+            <div class="col1">
+                <h1>1. Post a job</h1>
+                <p>Create a job post in minutes with easy-to-use job description templates. LinkedIn will then 
+                    match you with relevant — and qualified — candidates. Post a job for free, or decide if 
+                    you’d like to <span><b>pay to promote it.</b></span></p>
+                <h1>2. Get in front of the right people</h1>
+                <p>Your promoted job post will appear in prominent placements such as emails, across LinkedIn, 
+                    and through mobile push notifications, making it easy for qualified candidates to find — and apply.</p>
+                <h1>3. Organize and manage applicants</h1>
+                <p>Screen for your must-have qualifications, sort and rate applicants, manage your jobs, and connect 
+                    with candidates — all in one place. When you rate an applicant a good fit, LinkedIn learns who you’re 
+                    looking for and will recommend your job post to similar people.</p>
+                <button onclick="window.location.href = 'https://www.linkedin.com/talent/post-a-job?isPostForFreeCampaign=true&src=direct%2Fnone&veh=direct%2Fnone%7Cdirect%2Fnone';">Post a free job</button>
+            </div>
+            <div class="col1">
+                <br><br>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./howworks1.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./howworks2.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./howworks3.png">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </div>
+        </div>
+    </div>
+    <div class="section5">
+        <h1>Hiring for many roles?</h1>
+        <h2>Connect with us to see how LinkedIn can help you find the people you need at scale.</h2>
+        <center><button onclick="window.location.href = 'https://business.linkedin.com/talent-solutions/cx/19/10/product-comparison/b/request-free-demo';">Contact Sales</button></center><br><br>
+    </div>
+    <hr style="color: #cccccc;border-width: 0.1px;">
+    <footer>
+        <img src="./linkedin.png">
+        <p>@LinkedIn Corporation 2023</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: snow;
+}
+.heading h2{
+    font-size: 22px;
+    padding: 5px;
+    margin-left: 5px;
+    color: black;
+    padding-top: 9px;
+}
+.heading{
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    background-color: snow;
+    width: 100%;
+
+}
+img{
+    width: 90px;
+    height: 50px;
+    margin-left: 90px;
+}
+hr{
+    border-bottom: 2.5px solid #0077b5;
+}
+.section1{
+    width: 100%;
+    height: 620px;
+    background-color: beige;
+    display: flex;
+    background-image: url("./landing4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container1{
+    width: 40%;
+    height: 490px;
+    background-color: #ddeedd;
+    /* background-color: #96f2a2; */
+    margin: 75px;
+    text-align: center;
+    margin-left: 95px;
+}
+h1{
+    font-size: 72px;
+    padding: 28px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+h2{
+    font-size: 30px;
+    padding: 16px;
+    text-align: center;
+    font-weight: lighter;
+    /* Arial Narrow, Arial, sans-serif */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    text-align: center;
+    background-color: #0077b5;
+    padding: 14px 28px;
+    font-size: 20px;
+    margin: 25px;
+    font-weight: 200;
+    border: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fixed-button{
+    background-color: #484f4f;
+    color: white;
+    position: fixed;
+    padding: 10px 25px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 10px;
+    right: 10px;
+}
+.section2{
+    background-color: beige;
+    width: 100%;
+    height: 480px;
+}
+.section2 h2{
+    padding: 50px;
+    font-size: 52px;
+    font-weight: lighter;
+    /* background-color: green; */
+}
+.container3{
+    /* background-color: red; */
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 35px;
+    height: 180px;
+    /* background-color: yellow;
+    border: 1px solid black; */
+    text-align: center;
+}
+.column h1{
+    color: black;
+    background: none;
+    padding: 2px;
+}
+p{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section3{
+    background-color: #e6e6eb;
+    height: 860px;
+}
+.section3 h1{
+    font-size: 50px;
+    padding-top: 70px;
+}
+.section3 h2{
+    padding: 20px;
+    /* background-color: red; */
+}
+.container4{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: -40px;
+}
+.container4 p{
+    text-align: left;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #555555;
+}
+.section4{
+    width: 100%;
+    height: 960px;
+}
+.section4 h2{
+    font-size: 38px;
+    padding: 50px;
+}
+.container5{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 750px;
+}
+.col1{
+    float: left;
+    width: 50%;
+}
+.col1 h1{
+    color: #3a3a3a;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 0;
+    font: 30px/1.6 Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 550;
+}
+.col1 p{
+    padding: 18px;
+    color: #555555;
+    font: 20px/1.6 Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.section5{
+    background-color: beige;
+}
+.section5 h1{
+    font-size: 55px;
+    padding: 30px;
+}
+.section5 h2{
+    font-size: 28px;
+    padding: 15px;
+}
+span{
+    color: #0077b5;
+}
+footer{
+    padding: 25px;
+    justify-content: center;
+    display: flex;
+}
+footer p{
+    padding: 15px;
+}
+.mySlides{
+    display: none;
+}
+.slideshow-container img{
+    vertical-align: middle;
+    height: 450px;
+    width: 80%;
+}
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #3a3a3a;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
